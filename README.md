@@ -11,3 +11,5 @@ Printable mounting parts and editable designs for Amiga projects.
 - [BlueSCSI A4000 Tray](bluescsi-a4000-tray/): low-profile BlueSCSI 50-pin tray with hexagonal cut-outs for the RetroZen Amiga 4000D replica case.
 
 - [Single USB-A Mount for Amiga 4000D](single-usb-mount/): two-part compression clamp for the RetroZen replica case and AMST-AF-BK cable, using four M3 × 8 mm fixings.
+
+- [Amiga 4000D Ratte Auto Monitor Switch Bracket](ratte-auto-monitor-switch-bracket/): reinforced dual-VGA bracket with top-loading M3 nut slots for the RetroZen replica case.
