@@ -6,12 +6,12 @@ A mounting tray for the **BlueSCSI 50-pin PCB, revision 2023.10a**, intended for
 
 ## Files
 
-- [Printable tray v0.4 STL](BlueSCSI-A4000-tray-v0.4.stl)
+- [Printable tray v0.5 STL](BlueSCSI-A4000-tray-v0.5.stl)
 - [Editable OpenSCAD source](BlueSCSI-A4000-tray.scad)
 
-## Revision 0.4
+## Revision 0.5
 
-Adds hexagonal through-cut-outs to the v0.3 base to reduce plastic use. The mounting geometry is retained:
+Uses a regular staggered honeycomb pattern with larger hexagonal through-cut-outs and partial cells at the perimeter. The mounting geometry is retained:
 - Base: 101.6 × 89.2046 × 3 mm.
 - Three PCB standoffs: 2 mm above the base.
 - PCB underside: 5 mm above the case floor when mounted directly.
@@ -19,7 +19,7 @@ Adds hexagonal through-cut-outs to the v0.3 base to reduce plastic use. The moun
 - Existing M3 clearance holes, case nut pockets and underside PCB screw counterbores.
 - Corrected PCB mounting handedness from v0.3; intended SD access towards the side of the case with the lid removed.
 
-Hexagons are 10 mm point-to-point. Solid material is retained around every fixing, with at least 9 mm from each fixing centre to the nearest cut-out and at least 3 mm between adjacent hexagons. The perimeter remains solid.
+Full hexagons are 16 mm point-to-point, with uniform 3 mm webs between adjacent cells. Partial cells follow a 4 mm solid perimeter. Each fixing retains a solid 6.5 mm-radius pad, excluding its existing screw/nut recess.
 
 ## Printing and fitting
 
@@ -31,4 +31,4 @@ The source retains optional 18 mm spacers via `part="spacers"`; they are not nee
 
 ## Validation
 
-The exported v0.4 STL is a single closed solid with overall height 5 mm. All mounting coordinates are unchanged from v0.3. The revised cut-out tray has not yet been physically print-tested or load-tested. Verify case and PCB fit before final assembly.
+The exported v0.5 STL is a single closed solid with overall height 5 mm. All mounting coordinates are unchanged from v0.3. The revised cut-out tray has not yet been physically print-tested or load-tested. Verify case and PCB fit before final assembly.
