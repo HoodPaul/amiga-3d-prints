@@ -1,4 +1,4 @@
-// BlueSCSI 2023.10a, A4000 test-fit tray v0.5, mm.
+// BlueSCSI 2023.10a, A4000 test-fit tray v0.6, mm.
 // Corrected top-side handedness. Source PCB Y increases downwards.
 // +Y remains intended SD-access side; verify case orientation during fitting.
 $fn=64;
@@ -19,8 +19,9 @@ module tray(){difference(){union(){
  translate([p[0],p[1],0.8])hex(3);}
  for(p=pcbholes)let(q=rot(p)){
  translate([q[0],q[1],-0.1])cylinder(d=3.4,h=10);
- // Screw head counterbore: board screws installed from underside.
- translate([q[0],q[1],-0.1])cylinder(d=6.2,h=2.1);
+ // Underside captive M3 nut: 5.7 mm across flats, 2.6 mm deep.
+ // Insert nut before mounting tray; install PCB screws from above.
+ translate([q[0],q[1],-0.1])hex(2.7);
  }
  // Uniform honeycomb: 16 mm point-to-point, 3 mm webs.
  // Clip cells at a 4 mm perimeter and 6.5 mm fixing pads.
